@@ -8,167 +8,142 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.5.0/dist/index.iife.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <style>
-    #search:focus {
-      outline: none;
-      box-shadow: none;
-    }
-
-    header {
+  #search:focus {
+   outline: none;
+   box-shadow: none;
+}
+header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #00e5ff, #008da3); /* Soft blue gradient */
+  background: linear-gradient(to right, #00e5ff, #00727f); 
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem; /* Increase padding for a bit of spacious feel */
-  background-size: 400% 400%; /* Larger gradient for smooth animation effect */
-  animation: gradient-bg 5s ease infinite; /* Smooth transition of gradient colors */
-  border-bottom-left-radius: 20px; /* Add border radius to the bottom-left corner */
-  border-bottom-right-radius: 20px; /* Add border radius to the bottom-right corner */
+  padding: 1.5rem;
+  background-size: 400% 400%;
+  animation: gradient-bg 5s ease infinite;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-
 @keyframes gradient-bg {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
-
-
 .andr-btn {
-  background: linear-gradient(to right, #00e5ff, #008da3); /* green-400 to green-600 */
-  background-size: 200% 200%; /* Make the gradient twice as large for animation */
-  padding-left: 1.5rem; /* px-6 */
-  padding-right: 1.5rem; /* px-6 */
-  padding-top: 0.75rem; /* py-3 */
-  padding-bottom: 0.75rem; /* py-3 */
-  border-radius: 0.75rem; /* rounded-lg */
+  background: linear-gradient(to right, #00e5ff, #008da3);
+  background-size: 200% 200%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* shadow-lg */
-  outline: none; /* Remove focus outline */
-  cursor: none; /* Show the clickable cursor */
-  animation: gradient-animation 3s linear infinite; /* Continuous gradient animation */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: none;
+  animation: gradient-animation 3s linear infinite;
 }
 .andr-btn:focus {
-  outline: none; /* Ensure the outline is removed when the button is focused */
+  outline: none;
 }
-
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .andr-btn svg {
-  width: 1.25rem; /* w-5 */
-  height: 1.25rem; /* h-5 */
-  margin-right: 0.5rem; /* mr-2 */
+  width: 1.25rem; 
+  height: 1.25rem; 
+  margin-right: 0.5rem; 
 }
 .andro-btn {
-  background: linear-gradient(to right, #cccccc, #858585); /* green-400 to green-600 */
-  background-size: 200% 200%; /* Make the gradient twice as large for animation */
-  padding-left: 1.5rem; /* px-6 */
-  padding-right: 1.5rem; /* px-6 */
-  padding-top: 0.75rem; /* py-3 */
-  padding-bottom: 0.75rem; /* py-3 */
-  border-radius: 0.75rem; /* rounded-lg */
+  background: linear-gradient(to right, #cccccc, #858585);
+  background-size: 200% 200%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* shadow-lg */
-  outline: none; /* Remove focus outline */
-  cursor: none; /* Show the clickable cursor */
-  animation: gradient-animation 3s linear infinite; /* Continuous gradient animation */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: none;
+  animation: gradient-animation 3s linear infinite;
 }
-
 .andro-btn:focus {
-  outline: none; /* Ensure the outline is removed when the button is focused */
+  outline: none;
 }
-
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .andro-btn svg {
-  width: 1.25rem; /* w-5 */
-  height: 1.25rem; /* h-5 */
-  margin-right: 0.5rem; /* mr-2 */
+  width: 1.25rem; 
+  height: 1.25rem; 
+  margin-right: 0.5rem; 
 }
 .android-btn {
-  background: linear-gradient(to right, #00ff33, #0ba200); /* green-400 to green-600 */
-  background-size: 200% 200%; /* Make the gradient twice as large for animation */
-  padding-left: 1.5rem; /* px-6 */
-  padding-right: 1.5rem; /* px-6 */
-  padding-top: 0.75rem; /* py-3 */
-  padding-bottom: 0.75rem; /* py-3 */
-  border-radius: 0.75rem; /* rounded-lg */
+  background: linear-gradient(to right, #00ff33, #0ba200);
+  background-size: 200% 200%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* shadow-lg */
-  outline: none; /* Remove focus outline */
-  cursor: none; /* Show the clickable cursor */
-  animation: gradient-animation 3s linear infinite; /* Continuous gradient animation */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: none;
+  animation: gradient-animation 3s linear infinite;
 }
 .android-btn:focus {
-  outline: none; /* Ensure the outline is removed when the button is focused */
+  outline: none;
 }
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .android-btn:active {
-  transform: scale(0.95); /* scale down when clicked */
+  transform: scale(0.95);
 }
 .android-btn svg {
-  width: 1.25rem; /* w-5 */
-  height: 1.25rem; /* h-5 */
-  margin-right: 0.5rem; /* mr-2 */
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
 }
 .ios-btn {
-  background: linear-gradient(to left, #626161, #000308); /* gray-800 to gray-900 */
-  background-size: 200% 200%; /* Make the gradient twice as large for animation */
-  padding-left: 1.5rem; /* px-6 */
-  padding-right: 1.5rem; /* px-6 */
-  padding-top: 0.75rem; /* py-3 */
-  padding-bottom: 0.75rem; /* py-3 */
-  border-radius: 0.75rem; /* rounded-lg */
+  background: linear-gradient(to left, #626161, #000308);
+  background-size: 200% 200%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* shadow-lg */
-  outline: none; /* Remove focus outline */
-  cursor: pointer; /* Change to pointer to indicate clickable */
-  animation: gradient-animation 3s linear infinite; /* Continuous gradient animation */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: pointer;
+  animation: gradient-animation 3s linear infinite;
 }
+
 .ios-btn:focus {
-  outline: none; /* Ensure the outline is removed when the button is focused */
+  outline: none; 
 }
 @keyframes gradient-animation {
   0% {
@@ -182,12 +157,12 @@
   }
 }
 .ios-btn svg {
-  width: 1.25rem; /* w-5 */
-  height: 1.25rem; /* h-5 */
-  margin-right: 0.5rem; /* mr-2 */
+  width: 1.25rem; 
+  height: 1.25rem; 
+  margin-right: 0.5rem; 
 }
 .ios-btn:active {
-  transform: scale(0.95); /* scale down when clicked */
+  transform: scale(0.95); 
 }
     header {
       position: fixed;
@@ -195,12 +170,12 @@
       left: 0;
       right: 0;
       background-color: white;
-      z-index: 10; /* Ensure header is above other content */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for the header */
-      padding: 1rem; /* Optional: padding around header */
+      z-index: 10; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      padding: 1rem; 
     }
     .header-container {
-      max-width: 1200px; /* Set max width for the header content */
+      max-width: 1200px; 
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -208,7 +183,7 @@
     }
     body {
       padding-top: 80px;
-      padding-bottom: 20px; /* Adjust this value to match the header height */
+      padding-bottom: 20px; 
     }
 #app-description {
   transition: opacity 0.3s ease;
@@ -222,27 +197,26 @@
   opacity: 1;
   visibility: visible;
 }
-
 #and-popup {
-  display: none; /* Initially hidden */
+  display: none; 
   position: fixed;
-  bottom: 0; /* Position it exactly at the bottom */
+  bottom: 0; 
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(to right, #00e5ff, #008da3da); /* green-400 to green-600 */
+  background: linear-gradient(to right, #00e5ff, #008da3da); 
   color: white;
   padding: 16px;
-  border-radius: 20px 20px 0 0; /* Round the top corners */
+  border-radius: 20px 20px 0 0;
   text-align: center;
   z-index: 9999;
   opacity: 0;
-  width: 102vw; /* Make the popup span the full width of the screen */
-  box-sizing: border-box; /* Include padding in the width */
-  animation: slide-up 0.3s ease-out forwards, slide-down 0.2s ease-in 2.5s forwards; /* Animation */
+  width: 102vw;
+  box-sizing: border-box; 
+  animation: slide-up 0.3s ease-out forwards, slide-down 0.2s ease-in 2.5s forwards; 
 }
 #and-popup .message {
   margin-top: 10px;
-  font-size: 1.2rem; /* Increase text size for better visibility */
+  font-size: 1.2rem; 
 }
 @keyframes slide-up {
   0% {
@@ -265,26 +239,25 @@
   }
 }
 #ios-popup {
-  display: none; /* Initially hidden */
+  display: none; 
   position: fixed;
-  bottom: 0; /* Position it exactly at the bottom */
+  bottom: 0; 
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(to right, #00e5ff, #008da3da); /* Soft gradient */
+  background: linear-gradient(to right, #00e5ff, #008da3da); 
   color: rgb(255, 255, 255);
   padding: 16px;
-  border-radius: 20px 20px 0 0; /* Round the top corners */
+  border-radius: 20px 20px 0 0; 
   text-align: center;
   z-index: 9999;
   opacity: 0;
-  width: 102vw; /* Full width of the screen */
+  width: 102vw; 
   box-sizing: border-box;
-  animation: slide-up 0.4s ease-out forwards; /* Combined animation */
+  animation: slide-up 0.4s ease-out forwards; 
 }
-
 #ios-popup .message {
   margin-top: 10px;
-  font-size: 1.2rem; /* Increase text size for better visibility */
+  font-size: 1.2rem; 
 }
 @keyframes slide-up {
   0% {
@@ -306,26 +279,21 @@
     opacity: 0;
   }
 }
-
 .scrollbar-hidden {
-  -ms-overflow-style: none;  /* For Internet Explorer */
-  scrollbar-width: none;      /* For Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 .scrollbar-hidden::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none; 
 }
- /* Styles for screenshots */
  .screenshot {
-      transition: transform 0.3s ease; /* Smooth transition */
+      transition: transform 0.3s ease; 
       cursor: none;
     }
-
     .screenshot.enlarged {
-      transform: scale(2); /* Scale image to 2x its original size */
-      z-index: 10; /* Make sure the enlarged image is above others */
+      transform: scale(2); 
+      z-index: 10;
     }
-
-    /* Optional: To add a darkened background when image is enlarged */
     .enlarged-overlay {
       position: fixed;
       top: 0;
@@ -338,80 +306,66 @@
       align-items: center;
       z-index: 1000;
     }
-
-    .enlarged-overlay img {
+   .enlarged-overlay img {
       max-width: 90%;
       max-height: 90%;
     }
     #apps-grid {
   display: flex;
   justify-content: flex-start;
-  gap: 1.5rem; /* Add space between items */
+  gap: 1.5rem; 
   overflow-x: auto;
-  padding-bottom: 1rem; /* Optional: space for the horizontal scrollbar */
+  padding-bottom: 1rem; 
 }
-
 .app-item {
-  flex: 0 0 auto; /* Prevent items from shrinking or growing */
-  width: 18rem; /* Set a fixed width for the app items */
+  flex: 0 0 auto; 
+  width: 18rem; 
 }
-
 .app-item img {
   object-fit: cover;
-  height: 12rem; /* Ensure the images have a consistent height */
+  height: 12rem; 
 }
-/* Container for the search bar */
 .search-bar-container {
   position: relative;
-  width: 40px; /* Initial width to accommodate the icon */
-  height: 40px; /* Same for height */
-  transition: width 0.4s ease; /* Transition for smooth expansion */
+  width: 40px; 
+  height: 40px; 
+  transition: width 0.4s ease; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Search icon styling */
 .search-icon {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  transition: all 0.4s ease; /* Smooth transition for icon scaling */
+  transition: all 0.4s ease; 
 }
-
-/* Input field initially hidden */
 .search-input {
   position: absolute;
   top: 0;
   left: 0;
-  width: 0; /* Start with zero width */
+  width: 0; 
   height: 40px;
   padding: 8px;
   font-size: 16px;
-  border: 2px solid #00e5ff; /* Border color, change as needed */
+  border: 2px solid #00e5ff; 
   border-radius: 20px;
   opacity: 0;
   background: #fff;
   outline: none;
-  transition: width 0.4s ease, opacity 0.4s ease; /* Smooth expansion and fade-in */
+  transition: width 0.4s ease, opacity 0.4s ease; 
 }
-
-/* When the input field is active */
 .search-bar-container.active {
-  width: 250px; /* Expand container when input is active */
+  width: 250px; 
 }
-
 .search-bar-container.active .search-input {
-  width: 100%; /* Expand input field to fill the container */
-  opacity: 1; /* Fade in input field */
+  width: 100%; 
+  opacity: 1; 
 }
 
 .search-bar-container.active .search-icon {
-  opacity: 0; /* Fade out the search icon when input is active */
+  opacity: 0; 
 }
-
-
-
   </style>
 </head>
 <body class="bg-gradient-to-b from-gray-100 to-gray-290">
@@ -421,11 +375,10 @@
       <h1 class="text-4xl font-bold text-white mb-0" style="margin-bottom: 5px;">AppToZ</h1>
       <div class="search-bar-container">
         <div class="search-icon" id="search-icon">
-          <i class="fas fa-search"></i> <!-- Search icon, you can use FontAwesome or your own icon -->
+          <i class="fas fa-search"></i>
         </div>
         <input type="text" id="search-input" class="search-input" placeholder="Search..." />
-      </div>
-      
+      </div>   
     </div>
   </header>
   <section class="mb-12">
@@ -444,7 +397,7 @@
         </div>
         <div class="flex items-center justify-between mt-4">
           <div class="flex items-center">
-            <span class="ml-0 text-gray-700">5.6MB</span>
+            <span class="ml-0 text-gray-700">5.40MB</span>
           </div>
           <span class="text-gray-600">Safe to download</span>
         </div>
@@ -485,7 +438,6 @@
       Exciting new apps are coming soon!
     </div>
     <div id="apps-grid" class="flex justify-start space-x-6 overflow-x-auto" style="scrollbar-width: none;">
-      <!-- App Item 1 -->
       <div class="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 app-item w-72">
         <img src="solluu.jpg" alt="Super App" class="w-full h-32 object-cover">
         <div class="p-4">
@@ -499,7 +451,6 @@
           </button>
         </div>
       </div>
-      <!-- App Item 2 -->
       <div class="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 app-item w-72">
         <img src="sooru.jpg" alt="Super App" class="w-full h-32 object-cover">
         <div class="p-4">
@@ -516,8 +467,7 @@
         </div>
       </div>
     </div>
-  </section>
-  
+  </section>  
   </div>
  <div id="and-popup" class="text-center">
     <h3 class="text-2xl font-bold">DOWNLOADED</h3>
@@ -529,161 +479,130 @@
     <p class="message">.aab file will be updated soon</p>
   </div>
   <audio id="ios-audio" src="irungabhai.mp3" preload="auto"></audio>
-
-    <!-- Enlarged Image Overlay -->
     <div id="enlarged-overlay" class="enlarged-overlay">
         <img id="enlarged-image" src="" alt="Enlarged Screenshot">
       </div>
       <script>
-
-        // Get the search container and elements
 const searchBarContainer = document.querySelector('.search-bar-container');
 const searchIcon = document.getElementById('search-icon');
 const searchInput = document.getElementById('search-input');
-
-// Add an event listener to the search icon
 searchIcon.addEventListener('click', function() {
-  // Toggle the active class on the search bar container
   searchBarContainer.classList.toggle('active');
-  
-  // Focus the input field when it becomes visible
-  if (searchBarContainer.classList.contains('active')) {
+    if (searchBarContainer.classList.contains('active')) {
     searchInput.focus();
   }
 });
+const screenshots = document.querySelectorAll('.screenshot');
+  const enlargedOverlay = document.getElementById('enlarged-overlay');
+  const enlargedImage = document.getElementById('enlarged-image');
 
-        // Get all screenshot images
-        const screenshots = document.querySelectorAll('.screenshot');
-        const enlargedOverlay = document.getElementById('enlarged-overlay');
-        const enlargedImage = document.getElementById('enlarged-image');
-    
-        // Function to toggle image size
-        screenshots.forEach(img => {
-          img.addEventListener('click', function() {
-            if (this.classList.contains('enlarged')) {
-              // If image is enlarged, shrink it back
-              this.classList.remove('enlarged');
-              enlargedOverlay.style.display = 'none'; // Hide overlay
-            } else {
-              // Enlarge the image
-              this.classList.add('enlarged');
-              enlargedOverlay.style.display = 'flex'; // Show overlay
-              enlargedImage.src = this.src; // Set the enlarged image to the clicked image
-            }
-          });
-        });
-    
-        // Close the enlarged view when clicking outside the image
-        enlargedOverlay.addEventListener('click', function() {
-          enlargedOverlay.style.display = 'none'; // Hide overlay
-          screenshots.forEach(img => img.classList.remove('enlarged')); // Reset all images
-        });
-      </script>
-  <script>
-
-
- document.getElementById('ios-download').addEventListener('click', function() {
-      document.getElementById('ios-audio').play();
-      const popup = document.getElementById('ios-popup');
-      popup.style.display = 'block';
-            setTimeout(function() {
-        popup.style.display = 'none';
-      }, 3000);
+  screenshots.forEach(img => {
+    img.addEventListener('click', function() {
+      if (this.classList.contains('enlarged')) {
+        this.classList.remove('enlarged');
+        enlargedOverlay.style.display = 'none';
+      } else {
+        this.classList.add('enlarged');
+        enlargedOverlay.style.display = 'flex';
+        enlargedImage.src = this.src;
+      }
     });
-    document.getElementById('android-download').addEventListener('click', function() {
-      document.getElementById('and-audio').play();
-      const popup = document.getElementById('and-popup');
-      popup.style.display = 'block';
-            setTimeout(function() {
-        popup.style.display = 'none';
-      }, 3000);
-    });
-document.getElementById('info-icon').addEventListener('click', function() {
-  const description = document.getElementById('app-description');
-  description.classList.toggle('hidden');
-  description.classList.toggle('visible');
-});
+  });
 
-  </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
+  enlargedOverlay.addEventListener('click', function() {
+    enlargedOverlay.style.display = 'none';
+    screenshots.forEach(img => img.classList.remove('enlarged'));
+  });
+
+  document.getElementById('ios-download').addEventListener('click', function() {
+    document.getElementById('ios-audio').play();
+    const popup = document.getElementById('ios-popup');
+    popup.style.display = 'block';
+    setTimeout(function() {
+      popup.style.display = 'none';
+    }, 3000);
+  });
+
+  document.getElementById('android-download').addEventListener('click', function() {
+    document.getElementById('and-audio').play();
+    const popup = document.getElementById('and-popup');
+    popup.style.display = 'block';
+    setTimeout(function() {
+      popup.style.display = 'none';
+    }, 3000);
+  });
+
+  document.getElementById('info-icon').addEventListener('click', function() {
+    const description = document.getElementById('app-description');
+    description.classList.toggle('hidden');
+    description.classList.toggle('visible');
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('search-input');
     const appList = document.getElementById('apps-grid');
     const noAppsMessage = document.getElementById('no-apps-message');
     const apps = Array.from(appList.getElementsByClassName('app-item'));
 
-    // Function to filter the apps based on the search input
     function filterApps() {
-        const query = searchInput.value.toLowerCase().trim();
-        const filteredApps = apps.filter(app => app.textContent.toLowerCase().includes(query));
+      const query = searchInput.value.toLowerCase().trim();
+      const filteredApps = apps.filter(app => app.textContent.toLowerCase().includes(query));
 
-        // Show or hide the 'no apps' message based on whether any apps match
-        if (filteredApps.length === 0 && query !== "") {
-            noAppsMessage.style.display = 'block';
-            
-        } else {
-            noAppsMessage.style.display = 'none';
-        }
+      if (filteredApps.length === 0 && query !== "") {
+        noAppsMessage.style.display = 'block';
+      } else {
+        noAppsMessage.style.display = 'none';
+      }
 
-        // Clear the apps list and append the filtered results
-        appList.innerHTML = '';
-        filteredApps.forEach(app => appList.appendChild(app));
+      appList.innerHTML = '';
+      filteredApps.forEach(app => appList.appendChild(app));
     }
 
-    // Handle search input filtering as the user types
     searchInput.addEventListener('input', function() {
-        filterApps();
+      filterApps();
     });
 
-    // Clear the search input and reset the app list when Enter is pressed
     searchInput.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            const query = searchInput.value.trim().toLowerCase();
-            const filteredApps = apps.filter(app => app.textContent.toLowerCase().includes(query));
-            searchInput.value = ''; // Clear the search input
+      if (e.key === 'Enter') {
+        const query = searchInput.value.trim().toLowerCase();
+        const filteredApps = apps.filter(app => app.textContent.toLowerCase().includes(query));
+        searchInput.value = '';
 
-            // Show or hide the 'no apps' message based on filtered results
-            if (filteredApps.length === 0) {
-                noAppsMessage.style.display = 'block';
-            } else {
-                searchInput.value = ''; // Clear the search input
-                noAppsMessage.style.display = 'none';
-            }
-
-            // Re-render the filtered apps and retain the filtering after Enter is pressed
-            appList.innerHTML = '';
-            filteredApps.forEach(app => appList.appendChild(app));
+        if (filteredApps.length === 0) {
+          noAppsMessage.style.display = 'block';
+        } else {
+          searchInput.value = '';
+          noAppsMessage.style.display = 'none';
         }
+
+        appList.innerHTML = '';
+        filteredApps.forEach(app => appList.appendChild(app));
+      }
     });
 
-    // Reset the search and show all apps if the user clicks outside the search input
     document.addEventListener('click', function (e) {
-        if (!e.target.closest('#search-input')) {
-            searchInput.value = ''; // Clear the search input
-            noAppsMessage.style.display = 'none'; // Hide 'no apps' message
-            appList.innerHTML = ''; // Clear the app list
-
-            // Re-add all apps back to the list
-            apps.forEach(app => appList.appendChild(app));
-        }
+      if (!e.target.closest('#search-input')) {
+        searchInput.value = '';
+        noAppsMessage.style.display = 'none';
+        appList.innerHTML = '';
+        apps.forEach(app => appList.appendChild(app));
+      }
     });
 
-    // To prevent the search reset when clicking inside the search bar
     searchInput.addEventListener('click', function (e) {
-        e.stopPropagation();
+      e.stopPropagation();
     });
-});
+  });
 
-
-    document.getElementById('android-download').addEventListener('click', function() {
-      const apkUrl = 'Solluu.apk';  // Replace with the actual APK file URL
-      const link = document.createElement('a');
-      link.href = apkUrl;
-      link.download = 'Solluu.apk';  // Give the downloaded file a name
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
+  document.getElementById('android-download').addEventListener('click', function() {
+    const apkUrl = 'Solluu.apk';
+    const link = document.createElement('a');
+    link.href = apkUrl;
+    link.download = 'Solluu.apk';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
   </script>
 </body>
 </html>
