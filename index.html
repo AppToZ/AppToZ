@@ -434,7 +434,7 @@ header {
   </section><br>
   <section>
     <h2 class="text-2xl font-bold text-gray-800 mb-4">All Apps</h2>
-    <div id="no-apps-message" class="text-center text-gray-600 text-sm mb-6 mt-10 hidden" style="z-index: 1000;">
+    <div id="no-apps-message" class="text-center text-2xl font-bold text-gray-600 text-sm mb-6 mt-10 hidden" style="z-index: 1000;">
       Exciting new apps are coming soon!
     </div>
     <div id="apps-grid" class="flex justify-start space-x-6 overflow-x-auto" style="scrollbar-width: none;">
@@ -469,13 +469,13 @@ header {
   </section>  
   </div>
  <div id="and-popup" class="text-center">
-    <h3 class="text-2xl font-bold">DOWNLOADED</h3>
-    <p class="message">enjoy the Solluu app</p>
+    <h3 class="text-2xl font-bold">SOON</h3>
+    <p class="message">APK/AAB file will be updated soon</p>
   </div>
-  <audio id="and-audio" src="gp.m4a" preload="auto"></audio>
+  <audio id="and-audio" src="irungabhai.mp3" preload="auto"></audio>
   <div id="ios-popup" class="text-center">
     <h3 class="text-2xl font-bold">SOON</h3>
-    <p class="message">.aab file will be updated soon</p>
+    <p class="message">IPA file will be updated soon</p>
   </div>
   <audio id="ios-audio" src="irungabhai.mp3" preload="auto"></audio>
     <div id="enlarged-overlay" class="enlarged-overlay">
@@ -592,16 +592,10 @@ const screenshots = document.querySelectorAll('.screenshot');
       e.stopPropagation();
     });
   });
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+}); 
 
-  document.getElementById('android-download').addEventListener('click', function() {
-    const apkUrl = 'Solluu.apk';
-    const link = document.createElement('a');
-    link.href = apkUrl;
-    link.download = 'Solluu.apk';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  });
   </script>
 </body>
 </html>
