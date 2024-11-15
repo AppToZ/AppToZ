@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>AppToZ</title>
-  <link rel="icon" href=".png">
+  <link rel="icon" href="icon.png">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.5.0/dist/index.iife.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -392,9 +392,12 @@ footer {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
   </style>
 </head>
 <body class="bg-gradient-to-b from-gray-100 to-gray-290">
+  <div class="fixed inset-0 bg-cover bg-center opacity-100" style="background-image: url('bg.png'); background-size: 60% auto; z-index: -1; background-repeat: no-repeat;"></div>
+
   <div class="min-h-screen p-4">
  <header>
     <div class="header-container">
@@ -409,52 +412,53 @@ footer {
   </header>
   <section class="mb-12">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Published App</h2>
-    <div class="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-      <div class="relative p-4">
-        <button id="info-icon" class="absolute top-2 right-2" style=" outline: none; cursor: none; color:#67f0ff8d;">
-          <i class="fas fa-info-circle text-xl"></i>
+    <div class="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 relative" 
+     style="background: rgba(255, 255, 255, 0.6);">
+    <div class="relative p-4">
+        <button id="info-icon" class="absolute top-2 right-2 text-gray-300 hover:text-gray-300" style="outline: none; cursor: none;">
+            <i class="fas fa-info-circle text-xl"></i>
         </button>
         <div class="flex items-center mb-2">
-          <img src="ic.gif" alt="Solluu App" class="w-20 h-20 rounded-xl mr-4">
-          <div>
-            <h3 class="text-xl font-semibold">Solluu</h3>
-            <p class="text-gray-600">1.0.0</p>
-            <p class="text-l  mb-1">5.40MB</p>
-
-          </div>
+            <img src="ic.gif" alt="Solluu App" class="w-20 h-20 rounded-xl mr-4">
+            <div>
+                <h3 class="text-xl font-semibold">Solluu</h3>
+                <p class="text-gray-600">1.0.0</p>
+                <p class="text-l mb-1">5.40MB</p>
+            </div>
         </div>
         <div class="flex items-center justify-between mt-4">
-          <div class="flex items-center">
-            <span class="ml-24 text-gray-700">Download available shortly</span>
-          </div>
-          <span class="text-gray-600"></span>
+            <div class="flex items-center">
+                <span class="ml-24 text-gray-700">Download available shortly</span>
+            </div>
+            <span class="text-gray-600"></span>
         </div>
         <div class="mt-4 flex space-x-2">
-          <button id="android-download" class="android-btn flex-1 text-white px-6 py-3 rounded-lg flex items-center justify-center">
-            <img src="android.png" alt="Android Logo" class="w-5 h-6 mr-1" />
-            <img src="androidtext.png" alt="Android Text" class="h-4 w-18" />
-          </button>
-          <button id="ios-download" class="ios-btn flex-1 text-white px-6 py-3 rounded-lg flex items-center justify-center" style="cursor: none;">
-            <img src="ios.png" alt="ios Logo" class="w-8 h-8 mr-0" />
-            <img src="iostext.png" alt="ios Text" class="h-3 w-18 -mb-1 -ml-2" />
-          </button>
+            <button id="android-download" class="android-btn flex-1 text-white px-6 py-3 rounded-lg flex items-center justify-center">
+                <img src="android.png" alt="Android Logo" class="w-5 h-6 mr-1" />
+                <img src="androidtext.png" alt="Android Text" class="h-4 w-18" />
+            </button>
+            <button id="ios-download" class="ios-btn flex-1 text-white px-6 py-3 rounded-lg flex items-center justify-center" style="cursor: none;">
+                <img src="ios.png" alt="ios Logo" class="w-8 h-8 mr-0" />
+                <img src="iostext.png" alt="ios Text" class="h-3 w-18 -mb-1 -ml-2" />
+            </button>
         </div>
         <div class="mt-4">
-            <h3 class="text-xl  mb-4">Screenshots</h3>
+            <h3 class="text-xl mb-4">Screenshots</h3>
             <div class="flex space-x-4 overflow-x-auto scrollbar-hidden">
-              <img src="1.jpg" alt="Screenshot 1" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
-              <img src="2.jpg" alt="Screenshot 2" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
-              <img src="3.jpg" alt="Screenshot 3" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
-              <img src="4.jpg" alt="Screenshot 4" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
-              <img src="5.jpg" alt="Screenshot 5" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
-              <img src="6.jpg" alt="Screenshot 5" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
+                <img src="1.jpg" alt="Screenshot 1" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
+                <img src="2.jpg" alt="Screenshot 2" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
+                <img src="3.jpg" alt="Screenshot 3" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
+                <img src="4.jpg" alt="Screenshot 4" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
+                <img src="5.jpg" alt="Screenshot 5" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
+                <img src="6.jpg" alt="Screenshot 5" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
             </div>
-          <div id="app-description" class="mt-4 text-gray-600 text-sm hidden relative">
-        <p>
-         The <spam style="color: #00cce3;"><b>Solluu app</b></spam> offers an interactive, playful, and culturally relevant experience, making it highly engaging for users who are looking for casual, fun conversations.</p>
-      </div>
+            <div id="app-description" class="mt-4 text-gray-600 text-sm hidden relative">
+                <p>The <span style="color: #00cce3;"><b>Solluu app</b></span> offers an interactive, playful, and culturally relevant experience, making it highly engaging for users who are looking for casual, fun conversations.</p>
+            </div>
+        </div>
     </div>
-  </section>
+</div>
+
   <section>
     <h2 class="text-2xl font-bold text-gray-800 mb-4">All Apps</h2>
     <div id="no-apps-message" class="text-center font-semibold text-1xl text-gray-900 text-sm mb-6 mt-10 hidden" style="z-index: 1000; font-size: medium;">
@@ -643,7 +647,7 @@ const screenshots = document.querySelectorAll('.screenshot');
   });
   document.addEventListener('contextmenu', function(event) {
    event.preventDefault();
-    }); 
+}); 
 
   </script>
 </body>
