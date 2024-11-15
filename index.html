@@ -396,6 +396,10 @@ footer {
   </style>
 </head>
 <body class="bg-gradient-to-b from-gray-100 to-gray-290">
+        <!-- Fixed background image container -->
+        <div class="fixed inset-0 bg-cover bg-center opacity-100" 
+        style="background-image: url('bg.png'); background-size: 60% auto; background-repeat: no-repeat; background-position: center; z-index: -1;">
+      </div>
   <div class="min-h-screen p-4">
  <header>
     <div class="header-container">
@@ -413,13 +417,6 @@ footer {
     <div class="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 relative" 
      style="background: rgba(255, 255, 255, 0.6);">
     <div class="relative p-4">
-          <div class="fixed inset-0 bg-cover bg-center opacity-100" 
-            style="background-image: url('bg.png'); 
-              background-size: 60% auto; 
-              background-repeat: no-repeat; 
-              background-position: center; 
-              z-index: -1;">
-          </div>
         <button id="info-icon" class="absolute top-2 right-2 text-gray-300 hover:text-gray-300" style="outline: none; cursor: none;">
             <i class="fas fa-info-circle text-xl"></i>
         </button>
