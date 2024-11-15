@@ -185,6 +185,7 @@ header {
     }
     body {
       padding-top: 80px;
+      padding-bottom: 60px;
     }
 #app-description {
   transition: opacity 0.3s ease;
@@ -370,7 +371,7 @@ header {
   opacity: 0; 
 }
 footer {
-  position: relative;
+  position:fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -627,7 +628,7 @@ const screenshots = document.querySelectorAll('.screenshot');
     });
   });
 document.addEventListener('contextmenu', function(event) {
-  event.preventDefault();
+ event.preventDefault();
 }); 
 
   </script>
