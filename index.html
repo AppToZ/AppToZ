@@ -9,8 +9,6 @@
   <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.5.0/dist/index.iife.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-
   <style>
   #search:focus {
    outline: none;
@@ -186,6 +184,7 @@ header {
       align-items: center;
     }
     body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       padding-top: 80px;
       padding-bottom: 60px;
     }
@@ -397,7 +396,7 @@ footer {
   <div class="min-h-screen p-4">
  <header>
     <div class="header-container">
-      <h1 class="text-4xl font-bold text-white mb-0" style="margin-bottom: 5px;">AppToZ</h1>
+      <h1 class="text-4xl font-bold text-white mb-0" style="margin-bottom: 5px; font-family: 'Comic Sans MS', cursive, sans-serif;">AppToZ</h1>
       <div class="search-bar-container">
         <div class="search-icon" id="search-icon">
           <i class="fas fa-search"></i>
@@ -437,7 +436,7 @@ footer {
           </button>
         </div>
         <div class="mt-6">
-            <h3 class="text-xl font-semibold mb-4">Screenshots</h3>
+            <h3 class="text-xl  mb-4">Screenshots</h3>
             <div class="flex space-x-4 overflow-x-auto scrollbar-hidden">
               <img src="1.jpg" alt="Screenshot 1" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
               <img src="2.jpg" alt="Screenshot 2" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
@@ -448,7 +447,7 @@ footer {
             </div>
           <div id="app-description" class="mt-4 text-gray-600 text-sm hidden relative">
         <p>
-         The <b>Solluu app</b> offers an interactive, playful, and culturally relevant experience, making it highly engaging for users who are looking for casual, fun conversations.</p>
+         The <spam style="color: #00cce3;"><b>Solluu app</b></spam> offers an interactive, playful, and culturally relevant experience, making it highly engaging for users who are looking for casual, fun conversations.</p>
       </div>
     </div>
   </section>
@@ -469,6 +468,19 @@ footer {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>            
             Published
+          </button>
+        </div>
+      </div>
+      <div class="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 app-item w-72">
+        <img src="sk.jpg" alt="Solluu App" class="w-full h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold mb-1">Sonna Kelu</h3>
+          <p class="text-gray-600 text-sm mb-2">1.0.0</p>
+          <button class="andro-btn w-full mt-3 text-white px-4 py-2 rounded-lg flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>            
+            Publishing Soon
           </button>
         </div>
       </div>
@@ -625,9 +637,9 @@ const screenshots = document.querySelectorAll('.screenshot');
       e.stopPropagation();
     });
   });
- document.addEventListener('contextmenu', function(event) {
- event.preventDefault();
-}); 
+//  document.addEventListener('contextmenu', function(event) {
+ //   event.preventDefault();
+//}); 
 
   </script>
 </body>
