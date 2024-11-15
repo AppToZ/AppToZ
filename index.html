@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>AppToZ</title>
+  <link rel="icon" href=".png">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lucide-icons@0.5.0/dist/index.iife.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
   <style>
   #search:focus {
    outline: none;
@@ -17,7 +19,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #00e5ff, #00727f); 
+  background: linear-gradient(to right, #00e5ff, #008999); 
   z-index: 10;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -183,7 +185,6 @@ header {
     }
     body {
       padding-top: 80px;
-      padding-bottom: 20px; 
     }
 #app-description {
   transition: opacity 0.3s ease;
@@ -368,6 +369,25 @@ header {
 .search-bar-container.active .search-icon {
   opacity: 0; 
 }
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #00e5ff, #008999); 
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  background-size: 400% 400%;
+  animation: gradient-bg 5s ease infinite;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+@keyframes gradient-bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
   </style>
 </head>
 <body class="bg-gradient-to-b from-gray-100 to-gray-290">
@@ -409,8 +429,7 @@ header {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8M12 16l-4-4m4 4l4-4"></path>
             </svg>
             Android
-          </button>
-  
+          </button> 
           <button id="ios-download" class="ios-btn flex-1 text-white px-6 py-3 rounded-lg flex items-center justify-center" style="cursor: none;">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18l6-6-6-6"></path>
@@ -427,20 +446,19 @@ header {
               <img src="4.jpg" alt="Screenshot 4" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
               <img src="5.jpg" alt="Screenshot 5" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
               <img src="6.jpg" alt="Screenshot 5" class="screenshot w-32 h-32 object-cover cursor-pointer rounded-md">
-
-
             </div>
           <div id="app-description" class="mt-4 text-gray-600 text-sm hidden relative">
         <p>
          The <b>Solluu app</b> offers an interactive, playful, and culturally relevant experience, making it highly engaging for users who are looking for casual, fun conversations.</p>
       </div>
     </div>
-  </section><br>
+  </section>
   <section>
     <h2 class="text-2xl font-bold text-gray-800 mb-4">All Apps</h2>
     <div id="no-apps-message" class="text-center font-semibold text-1xl text-gray-900 text-sm mb-6 mt-10 hidden" style="z-index: 1000; font-size: medium;">
       Exciting new apps are coming soon!
     </div>
+   
     <div id="apps-grid" class="flex justify-start space-x-6 overflow-x-auto" style="scrollbar-width: none;">
       <div class="bg-gradient-to-b from-white to-gray-100 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 app-item w-72">
         <img src="solluu.jpg" alt="Solluu App" class="w-full h-32 object-cover">
@@ -472,6 +490,7 @@ header {
     </div>
   </section>  
   </div>
+
  <div id="and-popup" class="text-center">
     <h3 class="text-2xl font-bold">SOON</h3>
     <p class="message">APK/AAB file will be updated soon</p>
@@ -484,7 +503,18 @@ header {
   <audio id="ios-audio" src="irungabhai.mp3" preload="auto"></audio>
     <div id="enlarged-overlay" class="enlarged-overlay">
         <img id="enlarged-image" src="" alt="Enlarged Screenshot">
+    </div>
+    <footer class="p-1 mt-0">
+      <div class="flex justify-center items-center space-x-4">
+        <a href="instagram://user?username=rajesh_k_rishi" class="text-2xl hover:text-blue-500" target="_blank">
+            <img src="insta.png" alt="Instagram" class="w-7 h-7">
+        </a>
+            <img src="rkr.png" alt="Logo" class="w-14 h-14 rounded-full">
+        <a href="mailto:rajeshkrishi1313@gmail.com" class="text-2xl hover:text-red-500">
+            <img src="gmail.png" alt="Gmail" class="w-7 h-7">
+        </a>
       </div>
+    </footer>
       <script>
 const searchBarContainer = document.querySelector('.search-bar-container');
 const searchIcon = document.getElementById('search-icon');
@@ -596,8 +626,8 @@ const screenshots = document.querySelectorAll('.screenshot');
       e.stopPropagation();
     });
   });
-  document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
 }); 
 
   </script>
