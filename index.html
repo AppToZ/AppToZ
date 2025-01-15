@@ -564,6 +564,7 @@ footer {
     <h3 class="text-2xl font-bold">SOON</h3>
     <p class="message">APK/AAB file ready to download</p>
   </div>
+    <audio id="ios-audio" src="" preload="auto"></audio>
   <div id="ios-popup" class="text-center">
     <h3 class="text-2xl font-bold">SOON</h3>
     <p class="message">IPA file will be updated soon</p>
@@ -663,7 +664,6 @@ const screenshots = document.querySelectorAll('.screenshot');
   });
 
   document.getElementById('android-download').addEventListener('click', function() {
-    document.getElementById('and-audio').play();
     const popup = document.getElementById('and-popup');
     popup.style.display = 'block';
     setTimeout(function() {
